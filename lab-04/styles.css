@@ -1,0 +1,36 @@
+nav{
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+    transform: translateY(0);
+    transition: 0.5s;
+}
+
+nav a{
+    background-color: aliceblue;
+    color: black;
+    padding: 1vh;
+    margin: 0.5vh;
+}
+
+nav.open{
+    transform: translateY(100vw);
+}
+
+#menuToggler{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@media screen and (min-width: 500px){
+    #menuToggler{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+    }
+}
