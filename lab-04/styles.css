@@ -2,7 +2,7 @@ nav{
     display:flex;
     flex-direction: column;
     background-color: black;
-    transform: translateY(0);
+    transform: translateY(-100vw);
     transition: 0.5s;
 }
 
@@ -14,7 +14,7 @@ nav a{
 }
 
 nav.open{
-    transform: translateY(100vw);
+    transform: translateY(0vw);
 }
 
 #menuToggler{
